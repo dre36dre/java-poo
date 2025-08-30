@@ -6,7 +6,7 @@ public class ProgramaBanco {
 		ContaBanco p1= new ContaBanco(222, "CC", "Anderson", 1000, false);
 		p1.abrirConta("CC");
 	
-		
+	
 		ContaBanco p2=new ContaBanco(2000, null, null, 0, false);
 		p2.abrirConta("CP");
 		p2.setDono("Andre");

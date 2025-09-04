@@ -9,9 +9,34 @@ private Lutador desafiante;
 private int rounds;
 private boolean aprovada;
 
+//Métodos
+public void marcarLutar(Lutador l1, Lutador l2) {
+	if(l1.getCategoria() .equals(l2.getCategoria()) && l1 !=l2) {
+		this.aprovada=true;
+		this.desafiado=l1;
+		this.desafiante=l2;
+	}else
+	{
+		
+	}
+	
+	
+}
+
+public void lutar() {
+	if(aprovada) {
+		desafiado.apresentar();
+		desafiante.apresentar();
+		vencedor=Random(2);
+		sw
+		
+	}else {
+		System.out.println("Luta não pode acontecer");
+	}
+}
 
 
-
+//Métodos especiais
 public Lutador getDesafiado() {
 	return desafiado;
 }
@@ -37,20 +62,5 @@ public void setAprovada(boolean aprovada) {
 	this.aprovada = aprovada;
 }
 
-public void marcarLutar(Lutador l1, Lutador l2) {
-	if(l1.getCategoria() == l2.getCategoria()) && ()
-	
-}
-public void lutar() {
-	if(aprovada) {
-		desafiado.apresentar();
-		desafiante.apresentar();
-		vencedor=Random(2);
-		sw
-		
-	}else {
-		System.out.println("Luta não pode acontecer");
-	}
-}
 
 }

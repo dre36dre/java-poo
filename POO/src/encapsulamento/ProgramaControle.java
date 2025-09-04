@@ -9,6 +9,7 @@ public class ProgramaControle {
 		c.maisVolume();
 		c.play();
 		c.fecharMenu();
+		c.abrirMenu();
 	}
 
 }

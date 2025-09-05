@@ -13,11 +13,10 @@ public class Lutador {
 		
 	public Lutador(String nome, String nacionalidade, int idade, float peso, float altura,  int vitoria,
 			int derrota, int empate) {
-		super();
 		this.nome = nome;
 		this.nacionalidade = nacionalidade;
 		this.idade = idade;
-		this.peso = peso;
+		this.setPeso(peso);
 		this.altura = altura;
 		this.vitoria = vitoria;
 		this.derrota = derrota;
@@ -53,8 +52,6 @@ public class Lutador {
 	}
 	
 	
-	
-	
 	public String getNome() {
 		return nome;
 	}
@@ -78,6 +75,7 @@ public class Lutador {
 	}
 	public void setPeso(float peso) {
 		this.peso = peso;
+		this.setCategoria();
 	}
 	public float getAltura() {
 		return altura;
@@ -88,7 +86,8 @@ public class Lutador {
 	public String getCategoria() {
 		return categoria;
 	}
-	public void setCategoria(String categoria) {
+	
+	private void setCategoria() {
 		if(this.peso <=52.2) {
 			this.categoria = "Inválido";
 		}
@@ -97,7 +96,7 @@ public class Lutador {
 		}
 		else if(this.peso <=83.9) {
 			this.categoria="Médio";
-		}else if(this.peso <120.2) {
+		}else if(this.peso <=120.2) {
 			this.categoria="Pesado";
 		}else {
 			this.categoria="Inválido";

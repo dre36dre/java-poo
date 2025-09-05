@@ -11,7 +11,7 @@ private boolean aprovada;
 
 //Métodos
 public void marcarLutar(Lutador l1, Lutador l2) {
-	if(l1.getCategoria() .equals(l2.getCategoria()) && l1 !=l2) {
+	if(l1.getCategoria().equals(l2.getCategoria()) && l1 !=l2) {
 		this.aprovada=true;
 		this.desafiado=l1;
 		this.desafiante=l2;
@@ -27,9 +27,10 @@ public void marcarLutar(Lutador l1, Lutador l2) {
 
 public void lutar() {
 	if(this.aprovada) {
-		System.out.println("###Desafiado");
+		System.out.println("### Desafiado ###");
 		desafiado.apresentar();
-		System.out.println("###Desafiante");
+		
+		System.out.println("### Desafiante ###");
 		desafiante.apresentar();
 		
 		Random aleatorio=new Random();
@@ -57,6 +58,7 @@ public void lutar() {
 		break;
 		}
 		}else {
+			System.out.println("================================");
 			System.out.println("A luta não pode acontecer!");
 		}
 	

@@ -17,25 +17,50 @@ public void marcarLutar(Lutador l1, Lutador l2) {
 		this.desafiante=l2;
 	}else
 	{
-		
+		this.aprovada=false;
+		this.desafiado=null;
+		this.desafiante=null;
 	}
 	
 	
 }
 
 public void lutar() {
-	if(aprovada) {
+	if(this.aprovada) {
+		System.out.println("###Desafiado");
 		desafiado.apresentar();
+		System.out.println("###Desafiante");
 		desafiante.apresentar();
-		vencedor=Random(2);
-		sw
 		
-	}else {
-		System.out.println("Luta não pode acontecer");
+		Random aleatorio=new Random();
+		int vencedor=aleatorio.nextInt(3);
+		
+		
+		switch (vencedor) {
+		
+		case 0:  //Empate
+		System.out.println("Empatou");
+		this.desafiado.empatarLuta();
+		this.desafiante.empatarLuta();
+		break;
+		
+		case 1: //Desafiado vence
+		System.out.println("Ganhou "+this.desafiado.getNome());
+		this.desafiado.ganharLuta();
+		this.desafiante.perderLuta();
+		break;
+		
+		case 2: //Desafiante vence
+		System.out.println("Venceu "+this.desafiante.getNome());
+		this.desafiante.ganharLuta();
+		this.desafiado.perderLuta();
+		break;
+		}
+		}else {
+			System.out.println("A luta não pode acontecer!");
+		}
+	
 	}
-}
-
-
 //Métodos especiais
 public Lutador getDesafiado() {
 	return desafiado;

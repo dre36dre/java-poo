@@ -19,6 +19,13 @@ public class ProjetoHeranca {
 		p4.setSexo("F");
 		p3.setSalario(20000);
 		
+		p1.setIdade(5);
+		
+		p2.setCurso("Costura");
+		p3.setEspecialidade("Futebol");
+		p4.setSetor("Aula de costura");
+		
+		
 		System.out.println(p1.toString());
 		System.out.println(p2.toString());
 		System.out.println(p3.toString());

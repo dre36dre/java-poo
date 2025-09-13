@@ -12,6 +12,10 @@ public class Aluno extends Pessoa {
 		this.curso = curso;
 	}
 	
+	public void pagarMensalidade() {
+		System.out.println("Pagando mensalidade do aluno "+this.getNome());
+	}
+	
 	
 	public void cancelarMatricula() {
 		System.out.println("Matricula será cancelada");

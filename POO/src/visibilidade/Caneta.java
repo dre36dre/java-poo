@@ -1,7 +1,7 @@
 package visibilidade;
 
 public class Caneta {
-<<<<<<< HEAD
+	
  public  String modelo, cor;
  protected int  carga;
  private  float ponta;
@@ -27,13 +27,8 @@ private void rabiscar() {
  protected void destampar() {
 	 this.tampada=false;
  }
-=======
- private  String modelo, cor;
- protected int  carga;
- private  float ponta;
- private boolean tampada;
- 
- public  Caneta(String modelo, String cor, float ponta) {
+
+  public  Caneta(String modelo, String cor, float ponta) {
 	 this.modelo=modelo;
 	 this.cor=cor;
 	 this.ponta=ponta;
@@ -71,26 +66,6 @@ private void rabiscar() {
 	this.tampada = tampada;
  }
  
- void status() {
-	 System.out.println("Modelo: "+this.modelo);
-	 System.out.println("Uma caneta " +this.cor);
-	 System.out.println("Ponta: "+this.ponta);
-	 System.out.println("Carga: "+this.carga);
-	 System.out.println("Esta tampada? "+this.tampada);
- }
-public void rabiscar() {
-	 if(this.tampada == true) {
-		 System.out.println("ERRO! Não posso rabiscar");
-	 } else {
-		 System.out.println("Estou rabiscando");
-	 }
- }
- protected void tampar() {
-	 this.tampada=true;
- }
- protected void destampar() {
-	 this.tampada=false;
- }
- 
->>>>>>> refs/remotes/origin/master
+
 }
+ 

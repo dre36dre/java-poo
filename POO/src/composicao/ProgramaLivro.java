@@ -1,5 +1,7 @@
 package composicao;
 
+import agregacao.Pessoa;
+
 public class ProgramaLivro {
 	public static void main(String[] args) {
 		

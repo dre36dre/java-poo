@@ -1,5 +1,7 @@
 package composicao;
 
+import agregacao.Pessoa;
+
 public class Livro implements Publicacao {
 private String titulo;
 private String autor;

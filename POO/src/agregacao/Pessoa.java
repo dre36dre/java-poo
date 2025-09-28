@@ -1,9 +1,10 @@
-package composicao;
+package agregacao;
 
 public class Pessoa {
-	private String nome;
-	private int idade;
-	private String sexo;
+	protected String nome;
+	protected int idade;
+	protected String sexo;
+	protected float experiencia;
 	
 	
 	public void fazerAniversario() {

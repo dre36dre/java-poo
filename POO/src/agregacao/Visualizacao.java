@@ -12,6 +12,7 @@ public class Visualizacao {
 		this.filme.setViews(this.filme.getViews()+1);
 	}
 	
+	
 	public void avaliar() {
 		this.filme.setAvaliacao(5);
 	}
